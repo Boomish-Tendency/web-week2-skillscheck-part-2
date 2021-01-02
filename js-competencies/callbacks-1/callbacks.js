@@ -4,7 +4,17 @@
 
 //Code here
 
-
+function stringItOut(arr){
+  if (typeof(arr[0])==='number') {
+    return arr.sort( (a,b) => {
+      if (a < b) return 1;
+      if (a > b) return -1;
+      if (a === b) return 0;
+    }).toString()
+  } else {
+    return arr.sort().reverse().toString();
+  }
+}
 //////////////////PROBLEM 2////////////////////
 
 // Given the functions below: invoke the function math passing in complex, 2, and 3 as parameters. Save the result to a variable called mathResult.
@@ -18,3 +28,4 @@ function complex(num1, num2) {
 }
 
 //Code here
+let mathResult = math(complex, 2, 3)

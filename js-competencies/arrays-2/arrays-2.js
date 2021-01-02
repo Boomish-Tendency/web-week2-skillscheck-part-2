@@ -11,7 +11,12 @@
 
 //Code here
 
-const addMoreDucks = (array) => array.length > 4 ? array[2] = '42 ducks' : null 
+let addMoreDucks = arr => {
+    if (arr.length > 4) {
+        arr[2] = "42 ducks"
+    }
+    return arr
+}
 
 //////////////////PROBLEM 2////////////////////
 
@@ -21,7 +26,12 @@ const addMoreDucks = (array) => array.length > 4 ? array[2] = '42 ducks' : null
 
 //Code here
 
-const cutItOut = (array) => array.length > 4 ? array.splice(2,1) : null
+const cutItOut = arr => {
+    if (arr.length > 4) {
+        arr.splice(2, 1)
+    }
+    return arr
+}
 
 //////////////////PROBLEM 3////////////////////
 
@@ -31,4 +41,11 @@ const cutItOut = (array) => array.length > 4 ? array.splice(2,1) : null
 
 //Code here
 
-const changeName = (array) => array.map((e) => (e === 'Tolkn') ? e = 'Tolkien' : null)
+function changeName(arr){
+    for(let i = 0; i < arr.length; i++){
+      if (arr[i] === 'Tolkn'){
+        arr[i] = 'Tolkien'
+      }
+    } 
+    return arr
+}
