@@ -95,13 +95,7 @@ function undefiner(arr){
 //return "FLYING NOCTURNAL MAMMAL MAN!". Otherwise, return the result of
 //the parameter divided by 2.
 
-function nananan(arg) {
-    if ( isNaN(arg/2) ) {
-      return 'FLYING NOCTURNAL MAMMAL MAN!';
-    } else {
-      return param / 2;
-    }
-  }
+const nananan = param => isNaN(param / 2) ? "FLYING NOCTURNAL MAMMAL MAN!" : param / 2
 
 //Now, call nananan with the value NaN, and store the 
 //result of the function call in a variable called "na".
