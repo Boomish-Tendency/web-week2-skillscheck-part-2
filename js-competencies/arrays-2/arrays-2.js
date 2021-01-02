@@ -11,6 +11,7 @@
 
 //Code here
 
+const addMoreDucks = (array) => array.length > 4 ? array[2] = '42 ducks' : null 
 
 //////////////////PROBLEM 2////////////////////
 
@@ -20,6 +21,7 @@
 
 //Code here
 
+const cutItOut = (array) => array.length > 4 ? array.splice(2,1) : null
 
 //////////////////PROBLEM 3////////////////////
 
@@ -29,3 +31,4 @@
 
 //Code here
 
+const changeName = (array) => array.map((e) => (e === 'Tolkn') ? e = 'Tolkien' : null)
