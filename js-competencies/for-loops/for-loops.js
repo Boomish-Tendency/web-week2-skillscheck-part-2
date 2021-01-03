@@ -1,20 +1,19 @@
 //+++++++++ Start Here! All problems are below. +++++++++//
 
-
 //////////////////PROBLEM 1////////////////////
 
-//Finish the function addNumbers so that it pushes numbers starting at 
-//0 and up to (but not including) the value passed in, into the array 
+//Finish the function addNumbers so that it pushes numbers starting at
+//0 and up to (but not including) the value passed in, into the array
 //myNumbers. Make sure to return the array myNumbers at the end.
 //ex: passed 5 --> return [0, 1, 2, 3, 4]
 
-  function addNumbers(value){
-      var myNumbers = []
-      //Code here
-      
+function addNumbers(value) {
+  var myNumbers = [];
+  for (let i = 0; i < value; i++) {
+    myNumbers.push(i);
   }
-
-
+  return myNumbers;
+}
 //////////////////PROBLEM 2////////////////////
 
 //Finish the function backwardsGreeting. backwardsGreeting should loop
@@ -22,12 +21,14 @@
 // with each element, and pushing the resulting sting into the greetings
 //array. Then return the greetings array.
 
-  function backwardsGreeting(arr) {
-    let greetings = [];
-    //Code here
-  
-  }
+function backwardsGreeting(arr) {
+  let greetings = [];
 
+  for (i = arr.length - 1; i >= 0; i--) {
+    greetings.push("Hello, " + arr[i]);
+  }
+  return greetings;
+}
 
 //////////////////PROBLEM 3////////////////////
 
@@ -36,7 +37,9 @@
 //the string ' frog' onto the element. Then return the array. NOTE: use
 //the variable i for your for loop
 
-  function leapFrog(arr) {
-    //Code here
-
+function leapFrog(arr) {
+  for (let i = 0; i < arr.length - 1; i += 2) {
+    arr[i] += " frog";
   }
+  return arr;
+}
